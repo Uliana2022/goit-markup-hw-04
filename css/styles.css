@@ -125,6 +125,7 @@ img {
 }
 
 .header-connect {
+  display: flex;
   margin-left: auto;
 }
 
@@ -137,6 +138,8 @@ img {
   color: var(--item-color);
   fill: #757575;
   margin-right: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .mail-icon {
@@ -146,6 +149,7 @@ img {
 
 .smartphone-icon {
   fill: currentColor;
+  margin-right: 10px;
 }
 
 .address-phone {
@@ -155,6 +159,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--item-color);
+  display: flex;
+  align-items: center;
 }
 
 .address-mail:hover,
@@ -427,9 +433,13 @@ img {
 /* -------------FOOTER-------------- */
 
 .footer {
-  background-color: var(--item-color);
+  background-color: #2f303a;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.footer-contacts {
+  margin-right: 70px;
 }
 
 .address-map {
@@ -504,10 +514,42 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-background-color);
+  margin-bottom: 20px;
 }
 
-.footer-wrap .container {
+.footer .container {
   display: flex;
+  align-items: baseline;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-background-color);
+}
+
+.soc-icon {
+  fill: currentColor;
+}
+
+.soc-link:hover,
+.soc-link:focus {
+  background-color: var(--accent-color);
+  color: var(--main-background-color);
+}
+
+.soc-item + .soc-item {
+  margin-left: 10px;
 }
 /* -------------PORTFOLIO------------ */
 .portfolio-btn {
